@@ -9,7 +9,7 @@ ApplicationWindow {
     width: 640
     height: 480
     visible: true
-    property string apiKey: "41310f48-ba78-43ac-a8b6-2aee7091b606"
+    property string apiKey: "" // Insert your API key here
 
     menuBar: MenuBar {
         Menu {
