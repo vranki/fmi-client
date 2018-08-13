@@ -3,7 +3,7 @@ import QtQuick.XmlListModel 2.0
 
 XmlListModel {
     id: metarModel
-    source: "http://data.fmi.fi/fmi-apikey/" + apiKey + "/wfs?request=getFeature&storedquery_id=fmi::avi::observations::finland::latest::iwxxm"
+    source: "https://opendata.fmi.fi/wfs?request=getFeature&storedquery_id=fmi::avi::observations::finland::latest::iwxxm"
     query: "//*:FeatureCollection/*:member/*:VerifiableMessage"
 
     property string aerodromePath: "*:message/*:METAR/*:observation/*:OM_Observation/*:featureOfInterest/*:SF_SpatialSamplingFeature/*:sampledFeature/*:Aerodrome"
